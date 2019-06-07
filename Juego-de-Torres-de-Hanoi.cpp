@@ -103,9 +103,9 @@ void Torres_de_Hanoi<T>::jugar()
 		while((completado != cantidad_de_discos))
 		{
 			mostrar();
-			cout<<"\nDisco Origen :";
+			cout<<"\nPoste Origen :";
 			cin>>pre_1;
-			cout<<"Disco Destino :";
+			cout<<"Poste Destino :";
 			cin>>pre_2;
 			movimientos++;
 			//Inicio de comparacion para verificar el origen y destino de disco
@@ -187,7 +187,7 @@ void Torres_de_Hanoi<T>::pop_1(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe Disco 1 a -> 2";
+				cout<<"\nDe Poste 1 a -> 2";
 				tope_2--;								//Indica la posicion del dato Rellenado
 				Pila_2[tope_2] = Pila_1[tope_1];
 				Pila_1[tope_1] = 0;
@@ -205,7 +205,7 @@ void Torres_de_Hanoi<T>::pop_1(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe disco 1 a -> 3";
+				cout<<"\nDe Poste 1 a -> 3";
 				tope_3--;								//Indica la posicion del dato Rellenado
 				Pila_3[tope_3] = Pila_1[tope_1];
 				Pila_1[tope_1] = 0;
@@ -234,7 +234,7 @@ void Torres_de_Hanoi<T>::pop_2(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe Disco 2 a -> 1";
+				cout<<"\nDe Poste 2 a -> 1";
 				tope_1--;									//Indica la posicion del dato Rellenado
 				Pila_1[tope_1] = Pila_2[tope_2];
 				Pila_2[tope_2] = 0;
@@ -252,7 +252,7 @@ void Torres_de_Hanoi<T>::pop_2(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe disco 2 a -> 3";
+				cout<<"\nDe Poste 2 a -> 3";
 				tope_3--;								//Indica la posicion del dato Rellenado
 				Pila_3[tope_3] = Pila_2[tope_2];
 				Pila_2[tope_2] = 0;
@@ -281,7 +281,7 @@ void Torres_de_Hanoi<T>::pop_3(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe Disco 3 a -> 1";
+				cout<<"\nDe Poste 3 a -> 1";
 				tope_1--;								//Indica la posicion del dato Rellenado
 				Pila_1[tope_1] = Pila_3[tope_3];
 				Pila_3[tope_3] = 0;
@@ -299,7 +299,7 @@ void Torres_de_Hanoi<T>::pop_3(int opcion)
 			}
 			else
 			{
-				cout<<"\nDe disco 3 a -> 2";
+				cout<<"\nDe Poste 3 a -> 2";
 				tope_2--;								//Indica la posicion del dato Rellenado
 				Pila_2[tope_2] = Pila_3[tope_3];
 				Pila_3[tope_3] = 0;
